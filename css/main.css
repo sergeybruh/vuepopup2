@@ -111,6 +111,11 @@ button:focus {
   position: relative;
   display: block;
   margin: 40px; }
+  @media only screen and (max-width: 750px) {
+    .popup {
+      width: 90%;
+      height: auto;
+      padding-bottom: 50px; } }
   .popup .close {
     clear: both;
     position: absolute;

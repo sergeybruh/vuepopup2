@@ -1,3 +1,7 @@
+
+@media only screen and (max-width : 750px) {
+
+}
 *::-webkit-input-placeholder {
 	color: #666;
 	opacity: 1;
@@ -110,6 +114,7 @@ button:focus {outline:0;}
 }
 //popup styles
 .popup {
+
 	width: 645px;
 	height: 794px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
@@ -118,6 +123,11 @@ button:focus {outline:0;}
 	position: relative;
 	display: block;
 	margin: 40px;
+	@media only screen and (max-width : 750px) {
+		width: 90%;
+		height: auto;
+		padding-bottom: 50px;
+	}
 	//cross button
 	.close {
 		clear: both;
