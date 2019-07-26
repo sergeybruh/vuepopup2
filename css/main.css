@@ -1,0 +1,198 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*End eric reset*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url("../fonts/Larsseit-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Larsseit-Regular.woff") format("woff"), url("../fonts/Larsseit-Regular.ttf") format("truetype"), url("../fonts/Larsseit-Regular.svg#Larsseit-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+button:focus {
+  outline: 0; }
+
+.openform {
+  color: #fcfcfc;
+  font-family: "Larsseit";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 60px;
+  width: 260px;
+  height: 60px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #0021ff;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  margin-top: 20px; }
+
+.popup {
+  width: 645px;
+  height: 794px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  position: relative;
+  display: block;
+  margin: 40px; }
+  .popup .close {
+    clear: both;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 46px;
+    height: 46px;
+    background-color: #000000;
+    border-radius: 50px;
+    background-position: center;
+    background-image: url(../img/cross.png);
+    display: block;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer; }
+  .popup .title {
+    color: rgba(29, 29, 29, 0.98);
+    font-family: "Larsseit";
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 60px;
+    text-align: center; }
+  .popup .text {
+    padding-top: 15px;
+    text-align: center;
+    color: rgba(29, 29, 29, 0.98);
+    font-family: Larsseit;
+    font-size: 21px;
+    line-height: 30px;
+    padding-bottom: 32px; }
+  .popup .qtitle {
+    text-align: center;
+    color: rgba(29, 29, 29, 0.98);
+    font-family: "Larsseit";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 29px; }
+  .popup .stars {
+    margin-bottom: 51px;
+    width: 280px;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .popup .stars .star {
+      cursor: pointer;
+      display: block;
+      float: left;
+      width: 40px;
+      height: 38px;
+      margin-left: 20px;
+      background-image: url(../img/star.png); }
+      .popup .stars .star:first-of-type {
+        margin-left: 0; }
+      .popup .stars .star.active {
+        background-image: url(../img/activestar.png); }
+  .popup .submit {
+    color: #fcfcfc;
+    font-family: "Larsseit";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 60px;
+    width: 260px;
+    height: 60px;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #0021ff;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer; }
+
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
+/*# sourceMappingURL=main.css.map */
