@@ -1,7 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
-    toggleForm: true,
+    toggleForm: false,
    	//stars state 
    	stars1: {
    		1: false,
