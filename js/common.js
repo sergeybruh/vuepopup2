@@ -42,24 +42,42 @@ var app = new Vue({
   	//Method for 1-st star set 
   	star1(ev) {
   		let stars1Click = ev.path[0].attributes[0].nodeValue;
-  		for (i = 0; i < stars1Click; i++) { 
-		  this.stars1[i+1] = true;
+  		//set active stars
+  		for (i = 0; i < 5; i++) { 
+  		  if(i < stars1Click) {
+  		  	 this.stars1[i+1] = true;
+  		  }
+  		  else {
+  		  	this.stars1[i+1] = false;
+  		  }
 		}
 		this.rezult.star1 = stars1Click;
   	},
   	//Method for 2-nd star set 
   	star2(ev) {
   		let stars2Click = ev.path[0].attributes[0].nodeValue;
-  		for (i = 0; i < stars2Click; i++) { 
-		  this.stars2[i+1] = true;
+  		//set active stars
+  		for (i = 0; i < 5; i++) { 
+  		  if(i < stars2Click) {
+  		  	 this.stars2[i+1] = true;
+  		  }
+  		  else {
+  		  	this.stars2[i+1] = false;
+  		  }
 		}
 		this.rezult.star2 = stars2Click;
   	},
   	//Method for 3-rd star set 
   	star3(ev) {
   		let stars3Click = ev.path[0].attributes[0].nodeValue;
-  		for (i = 0; i < stars3Click; i++) { 
-		  this.stars3[i+1] = true;
+  		//set active stars
+  		for (i = 0; i < 5; i++) { 
+  		  if(i < stars3Click) {
+  		  	 this.stars3[i+1] = true;
+  		  }
+  		  else {
+  		  	this.stars3[i+1] = false;
+  		  }
 		}
 		this.rezult.star3 = stars3Click;
   	},
